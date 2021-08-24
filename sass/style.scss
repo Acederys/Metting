@@ -4,6 +4,7 @@ $color-blue: #18216D;
 $color-btn-green: #00ECD0;
 $color-white: #ffffff;
 $color-blue-backgroung: #F3F5FF;
+$color-pink: #EC00AA;
 
 
 body {
@@ -603,6 +604,32 @@ html {
 
     .main-features {
         justify-content: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 442px;
+            height: 442px;
+            left: 35px;
+            top: 109px;
+            background: $color-pink;
+            opacity: 0.06;
+            filter: blur(250px);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 664px;
+            height: 664px;
+            left: 970px;
+            top: 384px;
+            background: $color-btn-green;
+            opacity: 0.05;
+            filter: blur(250px);
+        }
+
 
         &__caption {
             font-weight: 600;
@@ -640,6 +667,7 @@ html {
         padding-top: 112px;
         width: 346px;
         margin-right: 52px;
+        position: relative;
 
         &__caption {
             font-size: 24px;
